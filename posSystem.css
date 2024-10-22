@@ -47,16 +47,16 @@ body {
 }
 
 .main>section {
+    width: 80rem;
     margin-left: 100px;
 }
 
 .main>section>div {
-    width: 650px;
+    /*width: 650px;*/
 }
 
 .main>section>.main-table1 {
-    width: 1200px;
-    margin-left: 50px;
+    width: 80rem;
     margin-top: 80px;
     margin-bottom: 120px;
 }

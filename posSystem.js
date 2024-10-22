@@ -1,3 +1,4 @@
+/*
 let hero_nav =document.getElementById("hero-nav");
 let customer_nav =document.getElementById("customer-nav");
 let item_nav =document.getElementById("item-nav");
@@ -39,3 +40,4 @@ order_nav.addEventListener('click', function (){
     order.style.display="block";
 });
 
+*/
