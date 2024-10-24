@@ -58,68 +58,55 @@
 </main>
 
 <!-- ========== Customer Section =========== -->
-<main class="customer-section">
-    <section class="container mt-4">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Customer</h2>
-                <form class="customer-form">
-                    <div class="mb-3">
-                        <label for="customerId" class="form-label">Customer ID</label>
-                        <input type="text" class="form-control" id="customerId">
+<main id="customer" class="main">
+    <h1>Customer</h1>
+    <section class="d-flex-column gap-3">
+        <div class="p-2 main-form">
+            <div class="main-content">
+                <form class="row g-3">
+                    <div class="col-md-6">
+                        <label for="customerId" class="form-label">Customer Id</label>
+                        <input type="text" class="form-control" id="customerId" placeholder="C001">
                     </div>
-                    <div class="mb-3">
+                    <div class="col-md-6">
                         <label for="customerName" class="form-label">Customer Name</label>
-                        <input type="text" class="form-control" id="customerName">
+                        <input type="text" class="form-control" id="customerName" placeholder="Nimsi">
                     </div>
-                    <div class="mb-3">
+                    <div class="col-md-6">
                         <label for="address" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="address">
+                        <input type="text" class="form-control" id="address" placeholder="Panadura">
                     </div>
-                    <div class="mb-3">
+                    <div class="col-md-6">
                         <label for="contact" class="form-label">Contact</label>
-                        <input type="text" class="form-control" id="contact">
+                        <input type="number" class="form-control" id="contact" placeholder="779100270">
+                    </div>
+                    <div class="col-md-6">
+                        <label for="email" class="form-label">Email</label>
+                        <input type="email" class="form-control" id="email" placeholder="example@gmail.com">
+                    </div>
+                    <div class="md-col-12 sm-col-1">
+                        <button id="save-customer" type="button" class="btn btn-danger">Save</button>
+                        <button id="update-customer" type="button" class="btn btn-danger">Update</button>
+                        <button id="delete-customer" type="button" class="btn btn-danger">Delete</button>
+                        <button id="clear-customer" type="button" class="btn btn-danger">Clear</button>
                     </div>
                 </form>
             </div>
-            <div class="col-md-8">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th scope="col">Customer ID</th>
-                        <th scope="col">Customer Name</th>
-                        <th scope="col">Address</th>
-                        <th scope="col">Contact</th>
-                    </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                    <tr>
-                        <th scope="row">C001</th>
-                        <td>Nimsi</td>
-                        <td>Panadura</td>
-                        <td>0779100270</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">C002</th>
-                        <td>Nimali</td>
-                        <td>Galle</td>
-                        <td>0759431652</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">C003</th>
-                        <td>Saman</td>
-                        <td>Kalutara</td>
-                        <td>0759614823</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <div class="btn-group customer-btn" role="group">
-                    <button type="button" class="btn btn-outline-danger">Save</button>
-                    <button type="button" class="btn btn-outline-danger">Update</button>
-                    <button type="button" class="btn btn-outline-danger">Delete</button>
-                    <button type="button" class="btn btn-outline-danger">Clear</button>
-                </div>
-            </div>
+        </div>
+
+        <div class="p-2 main-table">
+            <table class="table">
+                <thead>
+                <tr>
+                    <th>Customer ID</th>
+                    <th>Name</th>
+                    <th>Address</th>
+                    <th>Contact</th>
+                    <th>Email</th>
+                </tr>
+                </thead>
+                <tbody id="cus-tbl-body"></tbody>
+            </table>
         </div>
     </section>
 </main>
