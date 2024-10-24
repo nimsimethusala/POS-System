@@ -1,4 +1,4 @@
-/*let hero_nav =document.getElementById("hero-nav");
+let hero_nav =document.getElementById("hero-nav");
 let customer_nav =document.getElementById("customer-nav");
 let item_nav =document.getElementById("item-nav");
 let order_nav =document.getElementById("order-nav");
@@ -37,7 +37,7 @@ order_nav.addEventListener('click', function (){
     customer.style.display="none";
     item.style.display="none";
     order.style.display="block";
-});*/
+});
 
 
 let customer_array = [];
