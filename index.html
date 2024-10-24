@@ -112,61 +112,44 @@
 </main>
 
 <!-- ========== Item Section =========== -->
-<main class="item-section">
-    <section class="container mt-5">
-        <div class="row">
-            <div class="col-md-4">
-                <h2>Item</h2>
-                <form class="item-form">
-                    <div class="mb-3">
-                        <label for="customerId" class="form-label">Customer ID</label>
-                        <input type="text" class="form-control" id="itemId">
-                    </div>
-                    <div class="mb-3">
-                        <label for="customerName" class="form-label">Customer Name</label>
-                        <input type="text" class="form-control" id="itemName">
-                    </div>
-                    <div class="mb-3">
-                        <label for="address" class="form-label">Address</label>
-                        <input type="text" class="form-control" id="price">
-                    </div>
-                </form>
-            </div>
-            <div class="col-md-8">
-                <table class="table">
-                    <thead>
-                    <tr>
-                        <th scope="col">Item ID</th>
-                        <th scope="col">Item Name</th>
-                        <th scope="col">Quantity</th>
-                    </tr>
-                    </thead>
-                    <tbody class="table-group-divider">
-                    <tr>
-                        <th scope="row">I001</th>
-                        <td>Item 01</td>
-                        <td>2</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">I002</th>
-                        <td>Item 02</td>
-                        <td>1</td>
-                    </tr>
-                    <tr>
-                        <th scope="row">I003</th>
-                        <td>Item 03</td>
-                        <td>2</td>
-                    </tr>
-                    </tbody>
-                </table>
-                <div class="btn-group item-btn" role="group">
-                    <button type="button" class="btn btn-outline-danger">Save</button>
-                    <button type="button" class="btn btn-outline-danger">Update</button>
-                    <button type="button" class="btn btn-outline-danger">Delete</button>
-                    <button type="button" class="btn btn-outline-danger">Clear</button>
+<main id="item" class="main">
+    <h1>Item</h1>
+    <section class="d-flex-column gap-5">
+        <div class="p-2 main-form"><div class="main-content">
+            <form class="row g-3">
+                <div class="col-md-6">
+                    <label for="itemId" class="form-label">Item Id</label>
+                    <input type="text" class="form-control" id="itemId" placeholder="I001">
                 </div>
-            </div>
-        </div>
+                <div class="col-md-6">
+                    <label for="material" class="form-label">Meterial</label>
+                    <input type="text" class="form-control" id="material" placeholder="Teak">
+                </div>
+                <div class="col-md-6">
+                    <label for="price" class="form-label">Price</label>
+                    <input type="number" class="form-control" id="price">
+                </div>
+                <div class="col-12">
+                    <button id="save-item" type="button" class="btn btn-danger">Save</button>
+                    <button id="update-item" type="button" class="btn btn-danger">Update</button>
+                    <button id="delete-item" type="button" class="btn btn-danger">Delete</button>
+                    <button id="clear-item"type="button" class="btn btn-danger">Clear</button>
+                </div>
+            </form>
+        </div></div>
+
+        <div class="p-2 main-table1"><div class="main-table">
+            <table class="table main-table-content">
+                <thead>
+                <tr>
+                    <th scope="col">First</th>
+                    <th scope="col">Last</th>
+                    <th scope="col">Handle</th>
+                </tr>
+                </thead>
+                <tbody id="item-tbl-body"></tbody>
+            </table>
+        </div></div>
     </section>
 </main>
 
