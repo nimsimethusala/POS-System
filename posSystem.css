@@ -37,11 +37,7 @@ body {
     margin: 0;
 }
 
-/*<<<<<<< HEAD*/
-/*.main {
-=======
 .main {
->>>>>>> spa
     margin-top: 100px;
 }
 
@@ -55,12 +51,8 @@ body {
     margin-left: 100px;
 }
 
-.main>section>div {
-<<<<<<< HEAD
+/*.main>section>div {
     !*width: 650px;*!
-=======
-    /*width: 650px;*/
-/*>>>>>>> spa
 }*/
 
 .main>section>.main-table {
@@ -69,23 +61,6 @@ body {
     margin-bottom: 120px;
 }
 
-/*<<<<<<< HEAD
-=======*/
-/*.main>section>div>.main-content {
-    padding: 30px;
-    border-radius: 30px;
-    background: rgb(247,225,208);
-    background: linear-gradient(0deg, rgba(247,225,208,1) 8%, rgba(255,255,255,1) 32%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 68%, rgba(247,225,208,1) 92%);
-}*/
-
-/*.main>section>div>.main-table {
-    padding: 30px;
-    border-radius: 30px;
-    background: rgb(247,225,208);
-    background: linear-gradient(0deg, rgba(247,225,208,1) 8%, rgba(255,255,255,1) 32%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 68%, rgba(247,225,208,1) 92%);
-}*/
-
-/*>>>>>>> spa*/
 .order {
     margin-top: 100px;
 }
@@ -109,24 +84,10 @@ body {
     margin-left: 120px;
 }
 
-/*<<<<<<< HEAD*/
 .order>.cart {
     margin-top: 50px;
     margin-left: 500px;
-}/*/
-*/
-/*
-@media all and (max-width: 1440px) and (min-width: 1024px){
-    !*.hero-section>section>.hero-content>.name>h1 {
-=======
-/*.order>.table-section>.cart-table {
-    margin-top: 50px;
-    margin-left: 100px;
-    padding: 30px;
-    border-radius: 30px;
-    background: rgb(247,225,208);
-    background: linear-gradient(0deg, rgba(247,225,208,1) 8%, rgba(255,255,255,1) 32%, rgba(255,255,255,1) 50%, rgba(255,255,255,1) 68%, rgba(247,225,208,1) 92%);
-}*/
+}
 
 .order>.cart {
     margin-top: 50px;
@@ -135,7 +96,6 @@ body {
 
 @media all and (max-width: 1440px) and (min-width: 1024px){
     /*.hero-section>section>.hero-content>.name>h1 {
->>>>>>> spa
         font-size: 6.5rem;
     }
 
@@ -177,11 +137,7 @@ body {
     .order>.table-section {
         width: 1200px;
         margin-left: 120px;
-<<<<<<< HEAD
-    }*!
-=======
     }*/
-/*>>>>>>> spa*/
 
     html {
         font-size: 100%;
@@ -189,11 +145,7 @@ body {
 }
 
 @media all and (max-width: 1024px) and (min-width: 768px){
-/*<<<<<<< HEAD
-    !**/.hero-section>section>.hero-content {
-=======
     /*.hero-section>section>.hero-content {
->>>>>>> spa
         margin-top: 130px;
     }
 
@@ -246,11 +198,7 @@ body {
     .order>.table-section {
         width: 900px;
         margin-left: 60px;
-<<<<<<< HEAD
-    }*!
-=======
     }*/
-/*>>>>>>> spa*/
 
     html {
         font-size: 70%;
@@ -258,11 +206,7 @@ body {
 }
 
 @media all and (max-width: 768px) and (min-width: 425px){
-/*<<<<<<< HEAD
-    !*.hero-section>section>.hero-content {*/
-=======
     /*.hero-section>section>.hero-content {
->>>>>>> spa
         margin-top: 80px;
     }
 
@@ -315,11 +259,7 @@ body {
     .order>.table-section {
         width: 700px;
         margin-left: 60px;
-<<<<<<< HEAD
-    }*!
-=======
     }*/
-/*>>>>>>> spa*/
 
     html {
         font-size: 60%;
@@ -327,11 +267,7 @@ body {
 }
 
 @media all and (max-width: 425px) and (min-width: 375px){
-/*<<<<<<< HEAD*/
-    .hero-section>.hero-content {
-/*=======*/
     /*.hero-section>.hero-content {
->>>>>>> spa
         margin-top: 80px;
     }
 
@@ -389,11 +325,7 @@ body {
     .order>.cart {
         margin-top: 50px;
         margin-left: 50px;
-<<<<<<< HEAD
-    }*!
-=======
     }*/
-/*>>>>>>> spa*/
 
     html {
         font-size: 30%;
@@ -410,12 +342,4 @@ body {
     html {
         font-size: 30%;
     }
-
-}}}
-
-
-/*<<<<<<< HEAD
-}*!
-=======
 }
->>>>>>> spa*/
