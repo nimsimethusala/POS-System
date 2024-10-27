@@ -37,296 +37,37 @@ body {
     margin: 0;
 }
 
-.main {
-    margin-top: 100px;
-}
-
-.main>h1 {
-    margin-bottom: 80px;
-    margin-left: 100px;
-}
-
-.main>section {
-    width: 80rem;
-    margin-left: 100px;
-}
-
-/*.main>section>div {
-    !*width: 650px;*!
-}*/
-
-.main>section>.main-table {
-    width: 80rem;
+.main>.main-table {
     margin-top: 80px;
-    margin-bottom: 120px;
 }
 
-.order {
-    margin-top: 100px;
-}
-
-.order>h1 {
-    margin-bottom: 80px;
-    margin-left: 100px;
-}
-
-.order>.order-customer {
-    margin-left: 100px;
-}
-
-.order>.item {
-    margin-left: 100px;
-}
-
-.order>.table-section {
-    width: 1300px;
+.order>.cart-table {
     margin-top: 80px;
-    margin-left: 120px;
 }
 
-.order>.cart {
-    margin-top: 50px;
-    margin-left: 500px;
-}
-
-.order>.cart {
-    margin-top: 50px;
-    margin-left: 500px;
+#netTotal {
+    margin-top: 20px;
 }
 
 @media all and (max-width: 1440px) and (min-width: 1024px){
-    /*.hero-section>section>.hero-content>.name>h1 {
-        font-size: 6.5rem;
-    }
-
-    .hero-section>section>.hero-content>p {
-        margin-left: 0;
-        font-size: 1.1rem;
-    }
-
-    .main>h1 {
-        margin-bottom: 80px;
-        margin-left: 150px;
-    }
-
-    .main>section>.main-form {
-        margin-left: 320px;
-        margin-bottom: 120px;
-    }
-
-    .main>section>.main-table1 {
-        width: 1200px;
-        margin-left: 20px;
-        margin-bottom: 120px;
-    }
-
-    .order>h1 {
-        margin-bottom: 80px;
-        margin-left: 150px;
-    }
-
-    .order>.order-customer {
-        margin-left: 200px;
-    }
-
-    .order>.item {
-        margin-left: 200px;
-        margin-bottom: 80px;
-    }
-
-    .order>.table-section {
-        width: 1200px;
-        margin-left: 120px;
-    }*/
-
     html {
         font-size: 100%;
     }
 }
 
 @media all and (max-width: 1024px) and (min-width: 768px){
-    /*.hero-section>section>.hero-content {
-        margin-top: 130px;
-    }
-
-    .hero-section>section>.hero-content>.name>h1 {
-        font-size: 4rem;
-        margin-left: 30px;
-    }
-
-    .hero-section>section>.hero-content>p {
-        margin-left: 30px;
-        font-size: 1rem;
-    }
-
-    .hero-section>section>.hero-image>img {
-        margin-left: 10px;
-        margin-top: 30px;
-        width: 400px;
-    }
-
-    .main>h1 {
-        margin-bottom: 80px;
-        margin-left: 150px;
-    }
-
-    .main>section>.main-form {
-        margin-left: 120px;
-        margin-bottom: 120px;
-    }
-
-    .main>section>.main-table1 {
-        width: 900px;
-        margin-left: 0;
-        margin-bottom: 120px;
-    }
-
-    .order>h1 {
-        margin-bottom: 80px;
-        margin-left: 150px;
-    }
-
-    .order>.order-customer {
-        margin-left: 200px;
-    }
-
-    .order>.item {
-        margin-left: 200px;
-        margin-bottom: 80px;
-    }
-
-    .order>.table-section {
-        width: 900px;
-        margin-left: 60px;
-    }*/
-
     html {
         font-size: 70%;
     }
 }
 
 @media all and (max-width: 768px) and (min-width: 425px){
-    /*.hero-section>section>.hero-content {
-        margin-top: 80px;
-    }
-
-    .hero-section>section>.hero-content>.name>h1 {
-        font-size: 3.2rem;
-        margin-left: 20px;
-    }
-
-    .hero-section>section>.hero-content>p {
-        margin-left: 20px;
-        font-size: 0.8rem;
-    }
-
-    .hero-section>section>.hero-image>img {
-        margin-left: 10px;
-        margin-top: 10px;
-        width: 300px;
-    }
-
-    .main>h1 {
-        margin-bottom: 80px;
-        margin-left: 100px;
-    }
-
-    .main>section>.main-form {
-        margin-left: 20px;
-        margin-bottom: 120px;
-    }
-
-    .main>section>.main-table1 {
-        width: 700px;
-        margin-left: 0;
-        margin-bottom: 120px;
-    }
-
-    .order>h1 {
-        margin-bottom: 80px;
-        margin-left: 100px;
-    }
-
-    .order>.order-customer {
-        margin-left: 100px;
-    }
-
-    .order>.item {
-        margin-left: 100px;
-        margin-bottom: 80px;
-    }
-
-    .order>.table-section {
-        width: 700px;
-        margin-left: 60px;
-    }*/
-
     html {
         font-size: 60%;
     }
 }
 
 @media all and (max-width: 425px) and (min-width: 375px){
-    /*.hero-section>.hero-content {
-        margin-top: 80px;
-    }
-
-    .hero-section>.hero-content>section>.name>h1 {
-        font-size: 2rem;
-        margin-left: 0;
-    }
-
-    .hero-section>section>.hero-content>p {
-        margin-left: 0;
-        font-size: 0.5rem;
-    }
-
-    .hero-section>section>.hero-image>img {
-        margin-left: 0;
-        margin-top: 10px;
-        width: 50px;
-    }
-
-    .main>h1 {
-        margin-bottom: 80px;
-        margin-left: 50px;
-    }
-
-    .main>section>.main-form {
-        margin-left: 20px;
-        margin-bottom: 80px;
-    }
-
-    .main>section>.main-table1 {
-        width: 300px;
-        margin-left: 0;
-        margin-bottom: 120px;
-    }
-
-    .order>h1 {
-        margin-bottom: 80px;
-        margin-left: 50px;
-    }
-
-    .order>.order-customer {
-        margin-left: 50px;
-    }
-
-    .order>.item {
-        margin-left: 10px;
-        margin-bottom: 80px;
-    }
-
-    .order>.table-section {
-        width: 400px;
-        margin-left: 60px;
-    }
-
-    .order>.cart {
-        margin-top: 50px;
-        margin-left: 50px;
-    }*/
-
     html {
         font-size: 30%;
     }
