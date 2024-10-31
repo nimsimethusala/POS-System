@@ -1,3 +1,4 @@
+/*
 let hero_nav =document.getElementById("hero-nav");
 let customer_nav =document.getElementById("customer-nav");
 let item_nav =document.getElementById("item-nav");
@@ -99,11 +100,11 @@ $("#save-customer").on('click', function () {
    let cus_contact = $('#contact').val();
    let cus_email = $('#email').val();
 
-   /*console.log("id:", cus_id);
+   /!*console.log("id:", cus_id);
    console.log("name:", cus_name);
    console.log("address:", cus_address);
    console.log("contact:", cus_contact);
-   console.log("email:", cus_email);*/
+   console.log("email:", cus_email);*!/
 
     let customer = {
        cusId: cus_id,
@@ -172,9 +173,9 @@ $("#save-item").on('click', function () {
    let material = $('#material').val();
    let price = $('#price').val();
 
-   /*console.log("Item  Id: ", item_id);
+   /!*console.log("Item  Id: ", item_id);
    console.log("Material: ", material);
-   console.log("Price: ", price);*/
+   console.log("Price: ", price);*!/
 
    let item = {
        itemId: item_id,
@@ -196,10 +197,10 @@ $("#addToCart").on('click', function () {
    let orderQuantity = $('#OrderQuantity').val();
    let orderItemPrice = $('#OrderPrice').val();
 
-   /*console.log("itemId: ", orderItemId);
+   /!*console.log("itemId: ", orderItemId);
    console.log("material: ", orderMaterial);
    console.log("quantity: ", orderQuantity);
-   console.log("price: ", orderItemPrice);*/
+   console.log("price: ", orderItemPrice);*!/
 
    let addCart = {
        orderItemId: orderItemId,
@@ -213,4 +214,4 @@ $("#addToCart").on('click', function () {
    let cart_data = `<tr><td>${addCart.orderItemId}</td><td>${addCart.itemMaterial}</td><td>${addCart.itemQuantity}</td><td>${addCart.itemPrice}</td></tr>`;
 
    $("#order-tbl-body").append(cart_data);
-})
+})*/
