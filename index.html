@@ -160,7 +160,7 @@
     <div class="card w-100 mb-3">
         <div class="card-body">
             <h1 class="card-title">Order Detail</h1>
-            <h4 id="currentDate" style="text-align: right">Order Detail</h4><br>
+            <h4 id="currentDate" style="text-align: right"></h4><br>
             <div class="p-2 main-form">
                 <div class="main-content">
                     <form class="row g-3">
@@ -180,7 +180,7 @@
                         </div>
                         <div class="col-md-6">
                             <label for="itemNameOrder" class="form-label">Item Name</label>
-                            <input type="text" class="form-control" id="itemNameOrder">
+                            <input type="text" class="form-control" id="itemNameOrder" readonly>
                         </div>
                         <div class="col-md-6">
                             <label for="OrderQuantity" class="form-label">Quantity</label>
@@ -188,14 +188,18 @@
                         </div>
                         <div class="col-md-6">
                             <label for="OrderPrice" class="form-label">Price</label>
-                            <input type="number" class="form-control" id="OrderPrice">
+                            <input type="number" class="form-control" id="OrderPrice" readonly>
                         </div>
                         <div class="md-col-12 sm-col-1">
                             <button id="addToCart" type="button" class="btn btn-danger">Add to cart</button>
-                            <button type="button" class="btn btn-danger">Order Placed</button>
-                            <div class="d-flex flex-row mb-3" id="netTotal">
-                                <div class="p-2">Net Total :</div>
-                                <div class="p-2">100000</div>
+                            <button id="placedOrder" type="button" class="btn btn-danger">Order Placed</button>
+                            <div class="d-flex flex-row mb-3">
+<!--                                <div class="p-2">Net Total :</div>-->
+<!--                                <div id="netTotal" class="p-2"></div>-->
+                                <div class="col-md-6">
+                                    <label for="netTotal" class="form-label">Net total</label>
+                                    <input type="text" class="form-control" id="netTotal">
+                                </div>
                             </div>
                         </div>
                     </form>

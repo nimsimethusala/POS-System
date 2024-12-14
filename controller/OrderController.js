@@ -3,9 +3,13 @@ import CartModel from "../model/CartModel.js";
 import {customer_array} from "../db/database.js";
 import {item_array} from "../db/database.js";
 import {cart_array} from "../db/database.js";
+import {order_array} from "../db/database.js";
+
+
 
 $(document).ready(function () {
     $("#order-nav").on('click', function (event) {
+        displayDate();
         event.preventDefault();
         loadCustomerId();
         loadItemId();
@@ -48,8 +52,8 @@ $("#addToCart").on('click', function () {
     let customerId = $('#customerOrderId').val();
     let itemId = $('#itemOrderId').val();
     let itemNameOrder = $('#itemNameOrder').val();
-    let orderQuantity = $('#OrderQuantity').val();
-    let orderItemPrice = $('#OrderPrice').val();
+    let orderQuantity = parseInt($('#OrderQuantity').val(), 10);
+    let orderItemPrice = parseFloat($('#OrderPrice').val());
 
     if(customerId.length===0) {
         Swal.fire({
@@ -82,16 +86,23 @@ $("#addToCart").on('click', function () {
             text: "Invalid Price",
         });
     } else {
-        let cart = new CartModel(
-            customerId,
-            itemId,
-            itemNameOrder,
-            orderQuantity,
-            orderItemPrice
-        );
+        let existingCartItem = cart_array.find(cart => cart.itemId === itemId);
 
-        cart_array.push(cart);
+        if (existingCartItem) {
+            existingCartItem.quantity += orderQuantity;
+            existingCartItem.price = existingCartItem.quantity * orderItemPrice;
+        } else {
+            let cart = new CartModel(
+                customerId,
+                itemId,
+                itemNameOrder,
+                orderQuantity,
+                orderQuantity * orderItemPrice
+            );
+            cart_array.push(cart);
+        }
 
+        $("#netTotal").val(calculateNetTotal());
         loadCartData();
     }
 });
@@ -99,8 +110,84 @@ $("#addToCart").on('click', function () {
 const loadCartData = () => {
     $("#order-tbl-body").empty();
     cart_array.map((item, index) => {
-        let cartData = `<tr><td>${item.itemId}</td><td>${item.itemName}</td><td>${item.quantity}</td><td>${item.price}</td></tr>`;
+        let cartData = `<tr><td>${item.itemId}</td><td>${item.material}</td><td>${item.quantity}</td><td>${item.price}</td></tr>`;
+        console.log(cartData);
         $("#order-tbl-body").append(cartData);
     });
 }
 
+function displayDate() {
+    const dateElement = document.getElementById("currentDate");
+    const currentDate = new Date();
+
+    const formattedDate = `${currentDate.getDate()}-${currentDate.getMonth() + 1}-${currentDate.getFullYear()}`;
+
+    dateElement.textContent = `${formattedDate}`;
+}
+
+$("#placedOrder").on('click', function () {
+    let cusID = $('#customerOrderId').val();
+    let date = new Date(); // Current date for the order
+    let formattedDate = `${date.getDate()}-${date.getMonth() + 1}-${date.getFullYear()}`;
+    let netTotal = parseFloat($("#netTotal").val());
+
+    if (!cusID || cart_array.length === 0) {
+        Swal.fire({
+            icon: "error",
+            title: "Invalid Action",
+            text: "Please select a customer and add items to the cart before placing the order.",
+        });
+        return;
+    }
+
+    let newOrderId = order_array.length + 1;
+
+    let order = new OrderModel(
+        newOrderId,
+        cusID,
+        cart_array.itemId,
+        formattedDate,
+        cart_array.material,
+        cart_array.quantity,
+        //cart_array.price
+        netTotal
+    );
+
+    order_array.push(order);
+
+    cart_array.length = 0;
+    loadCartData();
+    $("#netTotal").val(0);
+
+    Swal.fire({
+        icon: "success",
+        title: "Order Placed",
+        text: `Order ID ${newOrderId} has been placed successfully.`,
+    });
+
+    loadOrderDetail();
+});
+
+const loadOrderDetail = () => {
+    $("#order-history-tbl-body").empty();
+    order_array.forEach((order) => {
+        let orderData = `
+            <tr>
+                <td>${order.orderId}</td>
+                <td>${order.customerId}</td>
+                <td>${order.date}</td>
+                <td>${order.total}</td>
+            </tr>
+        `;
+        $("#order-history-tbl-body").append(orderData);
+    });
+};
+
+const calculateNetTotal = () => {
+    let netTotal = 0;
+
+    cart_array.forEach(item => {
+        netTotal += item.price;
+    });
+    return netTotal;
+};
