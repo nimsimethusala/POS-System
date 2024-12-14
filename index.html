@@ -23,21 +23,43 @@
 <body>
 
 <!-- ========== Header Section =========== -->
-<nav class="navbar navbar-expand-lg bg-body-tertiary">
+<!--<nav class="navbar navbar-expand-lg bg-body-tertiary">
     <div class="container-fluid">
-        <span id="hero-nav" class="navbar-brand fs-5"><h1>Furniture Store</h1></span>
+        <span id="hero-nav" class="navbar-brand fs-5"><h2>Furniture Store</h2></span>
         <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
         </button>
         <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
             <div class="navbar-nav">
-                <!--<span id="hero-nav" class="nav-link">Home</span>-->
                 <span id="customer-nav" class="nav-link fs-5"><h4>Customer</h4></span>
                 <span id="item-nav" class="nav-link fs-5"><h4>Item</h4></span>
                 <span id="order-nav" class="nav-link fs-5"><h4>Order Detail</h4></span>
                 <span id="orderHistory-nav" class="nav-link fs-5"><h4>Order History</h4></span>
             </div>
         </div>
+    </div>
+</nav>-->
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary fixed-top">
+    <span id="hero-nav" class="navbar-brand"><img src="assets/images/home.png" height="36" style="margin-left: 20px"></span>
+    <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas" data-bs-target="#navbarOffcanvasLg" aria-controls="navbarOffcanvasLg" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="navbarOffcanvasLg" aria-labelledby="navbarOffcanvasLgLabel">
+        <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+            <li class="nav-item">
+                <span class="nav-link active fs-5" id="customer-nav" aria-current="page"><h4 style="margin-right: 20px; color: #6B0101">Customer</h4></span>
+            </li>
+            <li class="nav-item">
+                <span class="nav-link active fs-5" id="item-nav" aria-current="page"><h4 style="margin-right: 20px; color: #6B0101">Item</h4></span>
+            </li>
+            <li class="nav-item">
+                <span class="nav-link active fs-5" id="order-nav" aria-current="page"><h4 style="margin-right: 20px; color: #6B0101">Order Detail</h4></span>
+            </li>
+            <li class="nav-item">
+                <span class="nav-link active fs-5" id="orderHistory-nav" aria-current="page"><h4 style="margin-right: 20px; color: #6B0101">Order History</h4></span>
+            </li>
+        </ul>
     </div>
 </nav>
 
