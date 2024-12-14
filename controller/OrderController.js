@@ -5,8 +5,6 @@ import {item_array} from "../db/database.js";
 import {cart_array} from "../db/database.js";
 import {order_array} from "../db/database.js";
 
-
-
 $(document).ready(function () {
     $("#order-nav").on('click', function (event) {
         displayDate();
