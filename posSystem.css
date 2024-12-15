@@ -5,7 +5,6 @@ body {
 
 .navigationBar {
     background-color: antiquewhite;
-    height: 75px;
     margin-top: 20px;
     margin-left: 80px;
     margin-right: 80px;
@@ -53,6 +52,11 @@ body {
     visibility: visible;
 }
 
+.homeImg {
+    margin-left: 2rem;
+    width: 2rem;
+}
+
 .hero-section {
     background: url("assets/images/Free Photo _ Japandi living room interior design.jpg") no-repeat center;
     background-size: cover;
@@ -82,7 +86,8 @@ body {
 }
 
 .hero-section>.hero-content>section>p {
-    font-size: 1.3rem;
+    font-size: 1.5rem;
+    font-weight: 480;
 }
 
 .hero-section>.hero-content>section>.name>h1 {
@@ -94,7 +99,7 @@ body {
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     font-weight: 900;
-    font-size: 7rem;
+    font-size: 7.5rem;
     margin: 0;
 }
 
@@ -120,11 +125,64 @@ body {
     html {
         font-size: 70%;
     }
+
+    .navigationBar {
+        height: 60px;
+    }
+
+    .navTopic {
+        font-size: 2rem;
+    }
+
+    .homeImg {
+        width: 3rem;
+    }
+
+    .hero-section>.hero-content>section>p {
+        font-size: 1.65rem;
+    }
+
+    .hero-section>.hero-content>section>.name>h1 {
+        font-size: 8rem;
+    }
 }
 
 @media all and (max-width: 768px) and (min-width: 425px){
     html {
         font-size: 60%;
+    }
+
+    .navigationBar {
+        height: 60px;
+    }
+
+    .navbarIcon {
+        font-size: 2.75rem;
+        margin-right: 10px;
+    }
+
+    .homeImg {
+        width: 3rem;
+    }
+
+    .hero-section>.hero-content>section>p {
+        font-size: 1.85rem;
+        font-weight: 450;
+    }
+
+    .hero-section>.hero-content>section>.name>h1 {
+        font-size: 9rem;
+    }
+}
+
+@media all and (max-width: 740px) and (min-width: 425px){
+    .hero-section>.hero-content>section>p {
+        font-size: 1.18rem;
+        font-weight: 500;
+    }
+
+    .hero-section>.hero-content>section>.name>h1 {
+        font-size: 6.75rem;
     }
 }
 
@@ -132,16 +190,91 @@ body {
     html {
         font-size: 30%;
     }
+
+    .navigationBar {
+        height: 55px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .navbarIcon {
+        font-size: 4.50rem;
+        margin-right: 10px;
+    }
+
+    .homeImg {
+        width: 4.75rem;
+        margin-left: 20px;
+    }
+
+    .hero-section>.hero-content>section>p {
+        font-size: 2.15rem;
+        font-weight: 500;
+    }
+
+    .hero-section>.hero-content>section>.name>h1 {
+        font-size: 13rem;
+    }
 }
 
 @media all and (max-width: 375px) and (min-width: 325px){
     html {
         font-size: 30%;
     }
+
+    .navigationBar {
+        height: 55px;
+        margin-right: 40px;
+        margin-left: 40px;
+    }
+
+    .navbarIcon {
+        font-size: 4.50rem;
+        margin-right: 10px;
+    }
+
+    .homeImg {
+        width: 4.75rem;
+        margin-left: 20px;
+    }
+
+    .hero-section>.hero-content>section>p {
+        font-size: 1.85rem;
+        font-weight: 700;
+    }
+
+    .hero-section>.hero-content>section>.name>h1 {
+        font-size: 10rem;
+    }
 }
 
 @media all and (max-width: 325px) {
     html {
         font-size: 30%;
+    }
+
+    .navigationBar {
+        height: 48px;
+        margin-right: 20px;
+        margin-left: 20px;
+    }
+
+    .navbarIcon {
+        font-size: 4.75rem;
+        margin-right: 10px;
+    }
+
+    .homeImg {
+        width: 5rem;
+        margin-left: 20px;
+    }
+
+    .hero-section>.hero-content>section>p {
+        font-size: 1.62rem;
+        font-weight: 700;
+    }
+
+    .hero-section>.hero-content>section>.name>h1 {
+        font-size: 10rem;
     }
 }
