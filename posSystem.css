@@ -5,6 +5,7 @@ body {
 
 .navigationBar {
     background-color: antiquewhite;
+    height: 75px;
     margin-top: 20px;
     margin-left: 80px;
     margin-right: 80px;
