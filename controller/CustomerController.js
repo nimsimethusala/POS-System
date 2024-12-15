@@ -53,7 +53,16 @@ $("#save-customer").on('click', function () {
 
 //Update Customer
 $("#update-customer").on('click', function () {
-   let index = selected_customer_index;
+    if (selected_customer_index == null || selected_customer_index < 0) {
+        Swal.fire({
+            icon: "error",
+            title: "No Customer Selected",
+            text: "Please select a customer to update.",
+        });
+        return;
+    }
+
+    let index = customer_array[selected_customer_index];
 
     let cus_name = $('#customerName').val();
     let cus_address = $('#address').val();
@@ -61,7 +70,7 @@ $("#update-customer").on('click', function () {
     let cus_email = $('#email').val();
 
     let customer = new CustomerModel(
-        customer_array.length + 1,
+        index.id,
         cus_name,
         cus_address,
         cus_contact,
@@ -76,6 +85,15 @@ $("#update-customer").on('click', function () {
 
 //Delete Customer
 $("#delete-customer").on('click', function () {
+    if (selected_customer_index == null || selected_customer_index < 0) {
+        Swal.fire({
+            icon: "error",
+            title: "No Customer Selected",
+            text: "Please select a customer to delete.",
+        });
+        return;
+    }
+
     const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
             confirmButton: "btn btn-success",

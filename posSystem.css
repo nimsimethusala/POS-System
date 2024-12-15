@@ -4,7 +4,6 @@ body {
 }
 
 .navigationBar {
-    background-color: antiquewhite;
     margin-top: 20px;
     margin-left: 80px;
     margin-right: 80px;
@@ -103,16 +102,16 @@ body {
     margin: 0;
 }
 
+.card {
+    margin-top: 150px;
+}
+
 .main>.main-table {
     margin-top: 80px;
 }
 
 .order>.cart-table {
     margin-top: 80px;
-}
-
-#netTotal {
-    margin-top: 20px;
 }
 
 @media all and (max-width: 1440px) and (min-width: 1024px){

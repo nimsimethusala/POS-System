@@ -31,13 +31,22 @@ $("#save-item").on('click', function () {
 
 //Update Item
 $("#update-item").on('click', function () {
-    let index = selected_item_index;
+    if (selected_item_index == null || selected_item_index < 0) {
+        Swal.fire({
+            icon: "error",
+            title: "No Item Selected",
+            text: "Please select a item to update.",
+        });
+        return;
+    }
+
+    let index = item_array[selected_item_index];
 
     let itemName = $('#itemName').val();
     let price = $('#price').val();
 
     let item = new ItemModel(
-        item_array.length + 1,
+        index.id,
         itemName,
         price
     );
@@ -50,6 +59,15 @@ $("#update-item").on('click', function () {
 
 //Delete Item
 $("#delete-item").on('click', function () {
+    if (selected_item_index == null || selected_item_index < 0) {
+        Swal.fire({
+            icon: "error",
+            title: "No Item Selected",
+            text: "Please select a item to delete.",
+        });
+        return;
+    }
+
     const swalWithBootstrapButtons = Swal.mixin({
         customClass: {
             confirmButton: "btn btn-success",

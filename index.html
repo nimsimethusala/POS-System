@@ -49,19 +49,15 @@
         <ul class="navbar-nav justify-content-center flex-grow-1 pe-3">
             <li class="nav-item">
                 <span class="nav-link active fs-5 topicLine" id="customer-nav" aria-current="page"><h4 class="navTopic">Customer</h4></span>
-<!--                <span class="nav-link active fs-5 navTopic" id="customer-nav" aria-current="page">Customer</span>-->
             </li>
             <li class="nav-item">
                 <span class="nav-link active fs-5 topicLine" id="item-nav" aria-current="page"><h4 class="navTopic">Item</h4></span>
-<!--                <span class="nav-link active fs-5 navTopic" id="item-nav" aria-current="page">Item</span>-->
             </li>
             <li class="nav-item">
                 <span class="nav-link active fs-5 topicLine" id="order-nav" aria-current="page"><h4 class="navTopic">Order Detail</h4></span>
-<!--                <span class="nav-link active fs-5 navTopic" id="order-nav" aria-current="page">Order Detail</span>-->
             </li>
             <li class="nav-item">
                 <span class="nav-link active fs-5 topicLine" id="orderHistory-nav" aria-current="page"><h4 class="navTopic">Order History</h4></span>
-<!--                <span class="nav-link active fs-5 navTopic" id="orderHistory-nav" aria-current="page">Order History</span>-->
             </li>
         </ul>
     </div>
@@ -216,17 +212,13 @@
                             <label for="OrderPrice" class="form-label">Price</label>
                             <input type="number" class="form-control" id="OrderPrice" readonly>
                         </div>
+                        <div class="col-md-6">
+                            <label for="netTotal" class="form-label">Net total</label>
+                            <input type="text" class="form-control" id="netTotal" readonly>
+                        </div>
                         <div class="md-col-12 sm-col-1">
                             <button id="addToCart" type="button" class="btn btn-danger">Add to cart</button>
                             <button id="placedOrder" type="button" class="btn btn-danger">Order Placed</button>
-                            <div class="d-flex flex-row mb-3">
-<!--                                <div class="p-2">Net Total :</div>-->
-<!--                                <div id="netTotal" class="p-2"></div>-->
-                                <div class="col-md-6">
-                                    <label for="netTotal" class="form-label">Net total</label>
-                                    <input type="text" class="form-control" id="netTotal">
-                                </div>
-                            </div>
                         </div>
                     </form>
                 </div>
